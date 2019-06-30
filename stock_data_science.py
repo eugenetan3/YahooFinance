@@ -10,14 +10,14 @@ data_frame = web.DataReader(name = 'AMZN', data_source='yahoo', start = start_da
 
 print(data_frame)
 
-df.to_csv("~/Documents/{}.csv".format(symbol))
+export_csv = data_frame.to_csv(r'~/export_dataframe.csv', index = None, header=True)
 
-close = df[['close']]
 
-close = close.rename(columns={'close': symbol})
-ax = close.plot(title = 'Amazon')
-ax.set_xlabel('date')
-ax.set_ylabel('close price')
-ax.grid()
-plt.show()
+#
+#close = close.rename(columns={'close': 'AMZN'})
+#ax = close.plot(title = 'Amazon')
+#ax.set_xlabel('date')
+#ax.set_ylabel('close price')
+#ax.grid()
+#plt.show()
 
