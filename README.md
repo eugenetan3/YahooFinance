@@ -1,5 +1,5 @@
 # YahooFinance
-Basic Pandas DataReader for yahoo finance market. 
+Example of the PandaS DataReader applying the PandaS library and the DataTime system library. 
 
 Reads only the Amazon stock from the Yahoo Finance API.
 
